@@ -12,7 +12,7 @@ namespace Fibon.Test
         public void Fibonacci_ReturnsCorrectValues(int number, int expectedResult)
         {
             ICalculator calc = new SlowOne();
-            int result = calc.DoYourJob(number);
+            int result = calc.CalculateFibonacci(number);
             Assert.Equal(expectedResult, result);
 
         }
