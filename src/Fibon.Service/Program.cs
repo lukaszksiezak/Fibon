@@ -16,6 +16,7 @@ namespace Fibon.Service
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
+                .UseUrls("http://localhost:5050")
                 .UseStartup<Startup>()
                 .Build();
 
