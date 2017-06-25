@@ -69,5 +69,4 @@ namespace Fibon.Service
 		    services.AddScoped<ICommandHandler<CalculateValueCommand>, CalculateValueCommandHandler>();
 		}
     }
-
 }

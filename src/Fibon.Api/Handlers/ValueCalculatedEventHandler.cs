@@ -10,10 +10,10 @@ namespace Fibon.Api.Handlers
 		private readonly IBusClient _bus;
         private readonly IRepository _repository;
 
-        public ValueCalculatedEventHandler(IBusClient bus, IRepository repositoryu)
+        public ValueCalculatedEventHandler(IBusClient bus, IRepository repository)
 		{
 			_bus = bus;
-			_repository = repositoryu;
+			_repository = repository;
 		}
 
 		public async Task HandleAsync(ValueCalculatedEvent @event)
