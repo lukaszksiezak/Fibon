@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Fibon.Api.Repository{
     public class Repository:IRepository{
@@ -17,6 +18,11 @@ namespace Fibon.Api.Repository{
         void IRepository.Insert(int number, int result)
         {
             storage[number] = result;
+        }
+
+        Dictionary<int,int> IRepository.GetAll()
+        {
+            return storage;
         }
     }
 }
